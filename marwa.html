@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المحكمة  👩‍⚖️❤️</title>
+  <style>
+    body {
+      background-color: #121212;
+      font-family: 'Cairo', sans-serif;
+      text-align: center;
+      padding: 40px;
+      color: #fce4ec;
+    }
+    h1 {
+      color: #ff80ab;
+      margin-bottom: 10px;
+    }
+    .box {
+      background: #1e1e1e;
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    }
+    .label {
+      font-weight: bold;
+      color: #ff4081;
+      margin-bottom: 6px;
+      display: block;
+    }
+    .value {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #bbb;
+    }
+    .stamp {
+      font-size: 26px;
+      color: red;
+      margin-top: 20px;
+      transform: rotate(-5deg);
+      font-weight: bold;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 80%;
+      margin-top: 10px;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+    #defenseDisplay {
+      margin-top: 15px;
+      font-style: italic;
+      color: #ce93d8;
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📂 محكمة الحب العليا</h1>
+  <div class="box">
+    <span class="label">🔎 القضية رقم:</span>
+    <div class="value">2803 / سرقة القلب بدون إذن</div>
+
+    <span class="label">👨‍⚖️ المتهم:</span>
+    <div class="value">cheikooo 💘</div>
+
+    <span class="label">📜 الأدلة:</span>
+    <div class="value">
+      -dhktk aaa zwin dyalyyy  <br>
+      -3ynik w chfarkkkkk<br>
+      - hnntk 3liya 
+    </div>
+
+    <span class="label">🗣️ دفاع المتهم :</span>
+    <input type="text" id="defenseInput" placeholder="3abar 3ami ...">
+    <button onclick="submitDefense()">إرسال الدفاع</button>
+    <div id="defenseDisplay"></div>
+ 
+    <span class="label">⚖️ الحكم النهائي:</span>
+    <div class="value">محكوم بالسجن الأبدي بدون عفو!fglbyyy bien suur 💖 </div>
+
+    <div class="stamp">🔴 GUILTY</div>
+  </div>
+
+  <footer>
+    صادر عن القاضية: bntkkk 🌸<br>
+    في يوم: 24 جوان 2025
+  </footer>
+
+  <script>
+    function submitDefense() {
+      const input = document.getElementById("defenseInput").value;
+      const display = document.getElementById("defenseDisplay");
+      if (input.trim()) {
+        display.textContent = `\u2709️ دفاع المتهم: "${input}"`;
+      } else {
+        display.textContent = "رجاءً اكتب شيئًا قبل الإرسال 😅";
+      }
+    }
+  </script>
+</body>
+</html>
